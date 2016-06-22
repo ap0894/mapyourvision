@@ -1,6 +1,11 @@
 .imgDiv {
-	width:245px;
-	height:170px;
+	width:246px;
+	height:165px;
 	padding:10px;
 	border:1px solid #aaaaaa;
+}
+
+.img {
+	width: 50%;
+	height: 50%;
 }
