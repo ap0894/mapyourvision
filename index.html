@@ -13,11 +13,12 @@
 			<img id="avatar" class="img" src="images/avatar_grey_small.png" alt="avatar"></img>
 			<br/><span id="avatarName"></span>
 		</div>
+			
+		<p>Drag to arrange the images and re-create the original picture</p>
 		
 		<div id="boardContainer">
-			<p>Drag the W3Schools image into the rectangle:</p>
-			<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-			<img id="drag1" src="images/Picture1.png" draggable="true" ondragstart="drag(event)" width="239" height="165">
+			<div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<img id="drag1" src="images/Picture1.png" draggable="true" ondragstart="drag(event)">
 		</div>
 		
 		<!-- Javascript files added to the end of body for bootstrap -->
