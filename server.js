@@ -1,8 +1,8 @@
 var TEAM_SIZE = 3;
-var team[];
+var team = [];
 var inProgress = false;
 var BOARD_SIZE;
-var trs[];
+var trs = [];
 
 // Check the configuration file for more details
 var config = require('./config');
