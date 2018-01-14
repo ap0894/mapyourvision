@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Your Vision - Team building for virtual teams</title>
+    <title>BrandMaster - Team building for virtual teams</title>
 	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>	
@@ -13,71 +13,115 @@
 			<img id="avatar" class="img" src="images/avatar_grey_small.png" alt="avatar"></img>
 			<br/><span id="avatarName"></span>
 		</div>
+		<div id="resetContainer">
+		
+		</div>
+		<div id="header">
+			<div id="b" class="header tile">
+				<strong>b</strong>
+			</div>
+			<div id="m" class="header tile">
+				<strong>m</strong>
+			</div>
+			<div class="header" id="brand">
+				&nbsp;Brand
+			</div>
+			<div class="header" id="master">
+				Master
+			</div>
+			<div id="shadow" class="center"><img class="img" src="images/shadow_small.png" alt="shadow"></img></div>
+		</div>
+		
+		<div class="container center" id="endBanner">
+		
+		</div>
+		<div class="container" id="rules">
+			<div class="title">Objective</div>
+			<div class="blurb">
+				Teams take turns to identify their companies products, by linking them with one word clues or 'master brands'. One team member (the Brand Master) sets the clues, the others team members (the Marketeers) must guess the products based on that clue.<p><span class="read_more">Read More ...</span></p>
+				<div id="moreRules">
+					<p><strong>Brand Master</strong><br/>See’s all the products your team and other teams are developing and must conceptualise one word Masterbrands to link your products together. They enter their clue/master brand and the number of products they are trying to link.</p><p><strong>Marketeers</strong><br/>Choose products from the board that match the Brand Masters clues. You will receive a one word clue and a number that reflects the number of products linked. Marketeers receive a bonus guess each round to help identify unguessed products from previous rounds, these do not need to be taken).</p><p><strong>Time</strong><br/>Teams have 2 minutes per turn (to both provide a masterbrand and making all respective guesses).</p><p><strong>Turns</strong><br/>Turns end once all guesses are made (including the bonus guess), if a wrong answer is provided (guessing another teams product), if the team decides to end their turn early, or the 2 minutes elapse.</p>
+				</div>
+			</div>
+			<!--<div class="title">Rules</div>
+			<div class="blurb">
+				Here are some initial rules <span class="toggler"> more...</span>
+				<div id="moreRules">Here are some more rules</div>
+			</div>-->
+		</div>
 		
 		<div class="center" id="playerentry">
 			<div id="errMsg"></div>
 			<form id="homePageForm">	
 				<label class="label paleGrey" for="pname">Your Name</label>
 				<input class="input" type="text" id="pname" placeholder="Enter your name"/>
-				<!--<div id="options">-->
+				<div id="options">
 				</div>
 				<button class="btn-primary" type="button" id="joinBtn">Join game</button>
 			</form>
 		</div>
-			
-		<p>Drag to arrange the images and re-create the original picture</p>
 		
-		<div id="boardContainer">
-			<img id="drag1" class="img" src="images/Picture1.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag2" class="img" src="images/Picture2.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag3" class="img" src="images/Picture3.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag4" class="img" src="images/Picture4.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag5" class="img" src="images/Picture5.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag6" class="img" src="images/Picture6.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag7" class="img" src="images/Picture7.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag8" class="img" src="images/Picture8.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag9" class="img" src="images/Picture9.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag10" class="img" src="images/Picture10.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag11" class="img" src="images/Picture11.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag12" class="img" src="images/Picture12.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag13" class="img" src="images/Picture13.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag14" class="img" src="images/Picture14.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag15" class="img" src="images/Picture15.png" draggable="true" ondragstart="drag(event)">
-			<img id="drag16" class="img" src="images/Picture16.png" draggable="true" ondragstart="drag(event)">
+		<div id="teamTable" class="container">	
+		</div>
+		
+		<div class="center" id="waitMsg"></div>
+
+		<div class="container center" id="teamsWrap">
+			<div id="scoreTable"></div>	
+			<!--<div id="errors"></div>-->
+			<div id="numPlayers"></div>
+			<div id="role"></div>
+		</div>
 			
-			<table>
-				<tbody>
-					<tr>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-					</tr>
-					<tr>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-					</tr>
-					<tr>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-					</tr>
-					<tr>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-						<td><div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="container" id="board">
+		</div>
+		<div class="container" id="actions">
+		</div>
+
+		<!-- Teams Modal -->
+		<div id="teamsModal" class="modal">
+			<!--Modal Content -->
+			<div id="teamsModalContent" class="modal-content">
+			
+			</div>
+		</div>
+		
+		<!-- Correct Modal -->
+		<div id="correctModal" class="modal">
+			<!--Modal Content -->
+			<div class="modal-content">
+				<p><img class="img" src="images/happy_face_small.png" alt="correct" style="width:25%"></img></p>
+				<p><strong>Whoohoo! That's correct!</strong></p>
+				<p><span id="modalMsg"></span></p>
+			</div>
+		</div>
+		<!-- Incorrect Modal -->
+		<div id="incorrectModal" class="modal">
+			<!--Modal Content -->
+			<div class="modal-content">
+				<p><img class="img" src="images/sad_face_small.png" alt="incorrect" style="width:25%"></img></p>
+				<p><strong>It's good, but it's not right!</strong></p>
+				<p>Your turn ends...</p>
+			</div>
+		</div>
+		<!-- confirm Modal -->
+		<div id="confirmModal" class="modal">
+			<!--Modal Content -->
+			<div class="modal-content">
+				<p style="font-size; 26px;">Are you sure you want to select '<span style="font-weight:500;" id="wordToConfirm"></span>'?</p>
+				<input class="btn-secondary" id="nope" type="button" value="Nope"></input><input class="btn-primary" id="yes" type="button" value="Yes we do!"></input>
+			</div>
+		</div>
+		<div id="btmShadow" class="center"><img class="img" src="images/shadow_small.png" alt="shadow"></img></div>
+		<div class="container center" id="historyWrap">
+			<div id="history">
+			</div>
 		</div>
 		
 		<!-- Javascript files added to the end of body for bootstrap -->
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!--<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>-->
 		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 		<script src="./api/config"></script>  <!-- Loaded via REST API -->
 		<script src="./client.js"></script>
