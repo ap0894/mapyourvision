@@ -1,4 +1,5 @@
 var TEAM_SIZE = 3;
+var NUM_TEAMS = 2;
 var team = [];
 var inProgress = false;
 var BOARD_SIZE;
