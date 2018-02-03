@@ -1,7 +1,7 @@
 // this block executes when page DOM is ready
 $( document ).ready(function() {
 	
-	connect();	
+	//connect();	
 	// Listener for click on Enter Game button
 	$('#joinBtn').click(function(e){
 		e.preventDefault();
@@ -36,6 +36,18 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
+}
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
 }
 
 // Connect event for web sockets
